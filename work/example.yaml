@@ -1,0 +1,10 @@
+---
+name: foo
+data: 2011-10-20
+authors:
+  - Tommy
+  - Jimmy
+resources:
+  home: amiga.org
+  work: sure.com
+

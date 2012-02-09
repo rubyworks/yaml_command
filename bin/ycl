@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'ycl'
+
+begin
+  YCL::Command.run(ARGV)
+rescue Exception => error
+  raise if $DEBUG
+  puts error
+end
+
