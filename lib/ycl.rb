@@ -4,8 +4,28 @@ module YCL
   require 'executable'
   require 'ycl/base'
   require 'ycl/get'
+  require 'ycl/set'
   require 'ycl/splat'
   require 'ycl/slurp'
+  require 'ycl/edit'
+
+  #
+  module Console
+    extend self
+
+    #
+    def slurp(dir, options={})
+      slurp = Command::SlurpCommand.new(options)
+      slurp.call(dir)
+    end
+
+    #
+    def splat(file, options={})
+      splat = Command::SplatCommand.new(options)
+      splat.call(file)
+    end
+
+  end
 end
 
 

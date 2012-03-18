@@ -1,7 +1,7 @@
 module YCL
 
   # Writes each entry of a YAML hash to a file.
-  # This is the oposite of #slurp.
+  # This is the opposite of #slurp.
   #
   class Command::SplatCommand < Command
 
@@ -9,17 +9,15 @@ module YCL
     attr_switch :recurse
 
     # Splat a YAML mapping document into a directory of files.
-    # On file is created for each mapping key.
+    # One file is created for each mapping key.
     #
     def call(dir=Dir.pwd)
-      data = opts[:data]
-
-      data.each do |n,v|
-        fname = File.join(dir, n)
-        if File.exist?(fname)
-          raise "File exists. Use -F option to overwrite -- #{fname}" unless opts[:force]
-        end
-      end
+      #data.each do |n,v|
+      #  fname = File.join(dir, n)
+      #  if File.exist?(fname)
+      #    raise "File exists. Use -F option to overwrite -- #{fname}" unless force?
+      #  end
+      #end
 
       FileUtils.mkdir_p(dir) unless File.directory?(dir)
 
@@ -28,8 +26,7 @@ module YCL
         case v
         when Hash
           if recurse?
-            subopts = opts.merge(:data=>v)
-            splat(fname, subopts)
+            Console.splat(fname, :data=>v)
             txt = nil  # this prevents nil form writing file, good idea?
           else
             txt = v.to_yaml

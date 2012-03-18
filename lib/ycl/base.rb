@@ -83,6 +83,11 @@ module YCL
       end
     end
 
+    #
+    def data=(data)
+      @data = data
+    end
+
   private
 
     attr_reader :format

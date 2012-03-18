@@ -5,18 +5,24 @@ module YCL
   #
   class Command::SlurpCommand < Command
 
-    def call(dir)
+    #
+    def slurp(dir)
       hash = {}
       Dir.entries(dir).each do |path|
         next if path == '.' or path == '..'
-        if File.directory?(path)
-          hash[path] = slurp(path, opts)
+        local = File.join(dir, path)
+        if File.directory?(local)
+          hash[path] = slurp(local)
         else
-          text = File.read(path)
+          text = File.read(local)
           hash[path] = YAML.load(text)  # any cases where this is not good idea?
         end
       end
+      hash
     end
+
+    #
+    alias_method :call, :slurp
 
   end
 
