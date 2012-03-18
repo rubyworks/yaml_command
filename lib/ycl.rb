@@ -5,6 +5,7 @@ module YCL
   require 'ycl/base'
   require 'ycl/get'
   require 'ycl/set'
+  require 'ycl/sort'
   require 'ycl/splat'
   require 'ycl/slurp'
   require 'ycl/edit'

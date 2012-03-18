@@ -1,9 +1,17 @@
-# YCL - YAML CONTROL LANGUAGE
+# YCL - YAML COMMAND LINE TOOL
+
+[Website](http://rubyworks.github.com/ycl) /
+[Report Issue](http://github.com/rubyworks/ycl/issues) /
+[Development](http://github.com/rubyworks/ycl)
+[IRC Channel](irc://chat.us.freenode.net/rubyworks)
+
+
+## Description
 
 YCL is a command line tool for working with YAML files.
 
-Currently it is very much a work in progress, so please expect
-interface changes!
+Currently it is very much a work in progress, so please expect potential
+issues and interface changes!
 
 ## Commands
 
@@ -24,7 +32,7 @@ to stdout, using the --save option rewrites the file with the change.
 
 ### sort
 
-The sort comment can be used to sort portions of a YAML document.
+The sort command can be used to sort portions of a YAML document.
 
 ### slurp
 
@@ -47,6 +55,13 @@ splatted back out to update the directory and it's files.
 ### view
 
 Outputs a colized rendering of the YAML file.
+
+
+## Requirements
+
+YCL uses the [Executable](http://rubyworks.github.com/executable) library for
+command line parsing and the [ANSI](http://rubyworks.github.com/ansi)
+library for handling console colorization.
 
 
 ## Copyrights
