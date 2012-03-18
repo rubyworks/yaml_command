@@ -1,6 +1,6 @@
 ---
 source:
-- meta/
+- meta
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -8,9 +8,9 @@ copyrights:
 - holder: RubyWorks
   year: '2011'
   license: BSD-2-Clause
-replacements: []
-alternatives: []
 requirements:
+- name: ansi
+- name: executable
 - name: detroit
   groups:
   - build
@@ -20,6 +20,7 @@ requirements:
   - test
   development: true
 dependencies: []
+alternatives: []
 conflicts: []
 repositories:
 - uri: git://github.com/rubyworks/y.git
@@ -38,8 +39,8 @@ summary: Command-line access to YAML files
 title: YCL
 version: 0.0.1
 name: ycl
-description: ! 'Y provides a command line interface to tesing apart and
+description: ! 'YCL provides a command line interface to teasing apart and
 
   reconstructing YAML files.'
 organization: rubyworks
-date: '2011-10-22'
+date: '2012-03-18'

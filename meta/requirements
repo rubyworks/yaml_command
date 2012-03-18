@@ -1,4 +1,6 @@
 ---
+- ansi
+- executable
 - detroit (build)
 - qed     (test)
 

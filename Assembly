@@ -1,0 +1,41 @@
+---
+email:
+  file: ~
+  subject: ~
+  mailto: 
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+  #parts: [readme]
+
+gem:
+  active: true
+  #gemspec: pkg/lemon.gemspec
+
+github:
+  gh_pages: web
+
+dnote:
+  title: Source Notes
+  labels: ~
+  output: log/notes.html
+
+yard:
+  active: false
+  yardopts: true  
+  priority: 2
+
+qed:
+  active: false
+  files: spec
+  
+qedoc:
+  active: false
+  title: Lemony Testing
+  files: spec
+  output: SPEC.md
+
+vclog:
+  output: 
+    - log/history.html
+    - log/changes.html
+
