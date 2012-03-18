@@ -8,6 +8,7 @@ module YCL
   require 'ycl/splat'
   require 'ycl/slurp'
   require 'ycl/edit'
+  require 'ycl/view'
 
   #
   module Console

@@ -16,11 +16,12 @@ module YCL
 
     # Force file overwrites.
     attr_switch :force
-    alias_switch :F, :force
+    alias_switch :f, :force
 
-    # YAML file to use as data source.
+    # YAML file to use as data source. This can be used
+    # as an alternative to `$stdin`.
     attr_accessor :file
-    alias_accessor :f, :file
+    alias_accessor :F, :file
 
     # Output using Ruby's #inspect method.
     def inspect=(boolean)
@@ -82,6 +83,8 @@ module YCL
         puts cli
       end
     end
+
+  #protected
 
     #
     def data=(data)
