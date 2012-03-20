@@ -8,10 +8,10 @@ module DotRuby
   class GemSpec
 
     #
-    DOTRUBY = '{../,}.ruby' unless defined?(DOTRUBY)
+    DOTRUBY = '{,../}.ruby' unless defined?(DOTRUBY)
 
     #
-    MANIFEST = '{../,}manifest{,.txt}' unless defined?(MANIFEST)
+    MANIFEST = '{,../}manifest{,.txt}' unless defined?(MANIFEST)
 
     # For which revision of .ruby is this gemspec intended?
     REVISION = 0 unless defined?(REVISION)

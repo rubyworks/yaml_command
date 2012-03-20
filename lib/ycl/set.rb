@@ -25,8 +25,8 @@ module YCL
       end
 
       if !old_value.eql?(new_value)
-        #save
-        output data #.to_yaml
+        #TODO: save
+        output data
       end
 
     end
