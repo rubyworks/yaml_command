@@ -36,9 +36,9 @@ load_path:
 revision: 0
 created: '2011-10-22'
 summary: Command-line access to YAML files
-title: YCL
+title: YAML Command
 version: 0.0.1
-name: ycl
+name: yc
 description: ! 'YCL provides a command line interface to teasing apart and
 
   reconstructing YAML files.'

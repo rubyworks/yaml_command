@@ -1,4 +1,4 @@
-module YCL
+module YC
 
   # Abstract base command that all others use.
   #

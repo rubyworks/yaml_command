@@ -1,4 +1,4 @@
-module YCL
+module YC
 
   # Sort command. 
   #

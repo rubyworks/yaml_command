@@ -1,4 +1,4 @@
-module YCL
+module YC
 
   # TODO: This could use a better implmentation, it is very simplistic
   #       at this point.

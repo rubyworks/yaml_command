@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'ycl'
+require 'yc'
 
 begin
-  YCL::Command.run(ARGV)
+  YC::Command.run(ARGV)
 rescue Exception => error
   raise if $DEBUG
   puts error

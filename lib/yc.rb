@@ -1,15 +1,15 @@
-module YCL
+module YC
   require 'yaml'
   require 'fileutils'
   require 'executable'
-  require 'ycl/base'
-  require 'ycl/get'
-  require 'ycl/set'
-  require 'ycl/sort'
-  require 'ycl/splat'
-  require 'ycl/slurp'
-  require 'ycl/edit'
-  require 'ycl/view'
+  require 'yc/base'
+  require 'yc/get'
+  require 'yc/set'
+  require 'yc/sort'
+  require 'yc/splat'
+  require 'yc/slurp'
+  require 'yc/edit'
+  require 'yc/view'
 
   #
   module Console

@@ -30,7 +30,7 @@ qed:
   
 qedoc:
   active: false
-  title: Lemony Testing
+  title: YAML Command
   files: spec
   output: SPEC.md
 

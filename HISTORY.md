@@ -2,7 +2,7 @@
 
 ## 0.1.0 / 2012-03-18
 
-This is the initial public release of YCL.
+This is the initial public release of YC.
 
 Changes:
 
