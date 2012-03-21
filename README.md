@@ -2,7 +2,7 @@
 
 [Website](http://rubyworks.github.com/yc) /
 [Report Issue](http://github.com/rubyworks/yc/issues) /
-[Development](http://github.com/rubyworks/yc)
+[Development](http://github.com/rubyworks/yc) /
 [IRC Channel](irc://chat.us.freenode.net/rubyworks)
 
 
