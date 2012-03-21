@@ -41,7 +41,7 @@ summary: Command-line access to YAML files
 title: YAML Command
 version: 0.0.1
 name: yc
-description: ! 'YCL provides a command line interface to teasing apart and
+description: ! 'YC provides a command line interface to teasing apart and
 
   reconstructing YAML files.'
 organization: rubyworks
