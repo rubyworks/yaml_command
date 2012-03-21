@@ -1,23 +1,24 @@
-# YCL - YAML COMMAND LINE TOOL
+# YC - YAML COMMAND
 
-[Website](http://rubyworks.github.com/ycl) /
-[Report Issue](http://github.com/rubyworks/ycl/issues) /
-[Development](http://github.com/rubyworks/ycl)
+[Website](http://rubyworks.github.com/yc) /
+[Report Issue](http://github.com/rubyworks/yc/issues) /
+[Development](http://github.com/rubyworks/yc)
 [IRC Channel](irc://chat.us.freenode.net/rubyworks)
 
 
 ## Description
 
-YCL is a command line tool for working with YAML files.
+YC is a command line tool for working with YAML.
 
 Currently it is very much a work in progress, so please expect potential
-issues and interface changes!
+issues and interface changes! In paricular, YC won't be a useful as it
+should be until a solid YPath library is available.
 
 ## Commands
 
 Commands are invoked simply enough:
 
-    $ ycl <command> [options...] [arguments...]
+    $ yc <command> [options...] [arguments...]
 
 ### get
 
@@ -28,7 +29,7 @@ it to stdout.
 
 The `set` commnd is the opposite of `get` in that it lets you change
 a portion of a YAML file. By defult the changes YAML document will go
-to stdout, using the --save option rewrites the file with the change.
+to stdout, using the `--save` option rewrites the file with the change.
 
 ### sort
 
@@ -59,7 +60,7 @@ Outputs a colized rendering of the YAML file.
 
 ## Requirements
 
-YCL uses the [Executable](http://rubyworks.github.com/executable) library for
+YC uses the [Executable](http://rubyworks.github.com/executable) library for
 command line parsing and the [ANSI](http://rubyworks.github.com/ansi)
 library for handling console colorization.
 
@@ -68,7 +69,7 @@ library for handling console colorization.
 
 Copyright (c) 2011 Rubyworks. All rights reserved.
 
-YCL may be distributed in accordance with the **BSD-2-Clause** license.
+YC may be distributed in accordance with the **BSD-2-Clause** license.
 
 See the LICENSE.txt file for details.
 

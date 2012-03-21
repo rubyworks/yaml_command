@@ -27,9 +27,11 @@ repositories:
   scm: git
   name: upstream
 resources:
-  home: http://rubyworks.github.com/y
-  code: http://github.com/rubyworks/y
+  home: http://rubyworks.github.com/yc
+  code: http://github.com/rubyworks/yc
+  bugs: http://github.com/rubyworks/yc/issues
   mail: http://groups.google.com/rubyworks-mailinglist
+  chat: irc://chat.us.freenode.net/rubyworks
 extra: {}
 load_path:
 - lib
