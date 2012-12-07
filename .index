@@ -1,48 +1,58 @@
 ---
-source:
-- meta
+type: ruby
+revision: 2013
+sources:
+- Indexfile
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
+organizations:
+- name: Rubyworks
+requirements:
+- name: ansi
+- name: executable
+- groups:
+  - build
+  development: true
+  name: detroit
+- groups:
+  - test
+  development: true
+  name: qed
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://rubyworks.github.com/yc
+  label: Homepage
+- type: code
+  uri: http://github.com/rubyworks/yc
+  label: Source Code
+- type: bugs
+  uri: http://github.com/rubyworks/yc/issues
+  label: Issue Tracker
+- type: mail
+  uri: http://groups.google.com/rubyworks-mailinglist
+  label: Mailing List
+- type: chat
+  uri: irc://chat.us.freenode.net/rubyworks
+  label: IRC Channel
+repositories:
+- name: upstream
+  scm: git
+  uri: git://github.com/rubyworks/y.git
+categories: []
+load_path:
+- lib
 copyrights:
 - holder: RubyWorks
   year: '2011'
   license: BSD-2-Clause
-requirements:
-- name: ansi
-- name: executable
-- name: detroit
-  groups:
-  - build
-  development: true
-- name: qed
-  groups:
-  - test
-  development: true
-dependencies: []
-alternatives: []
-conflicts: []
-repositories:
-- uri: git://github.com/rubyworks/y.git
-  scm: git
-  name: upstream
-resources:
-  home: http://rubyworks.github.com/yc
-  code: http://github.com/rubyworks/yc
-  bugs: http://github.com/rubyworks/yc/issues
-  mail: http://groups.google.com/rubyworks-mailinglist
-  chat: irc://chat.us.freenode.net/rubyworks
-extra: {}
-load_path:
-- lib
-revision: 0
-created: '2011-10-22'
-summary: Command-line access to YAML files
+name: yc
 title: YAML Command
 version: 0.0.1
-name: yc
-description: ! 'YC provides a command line interface to teasing apart and
-
-  reconstructing YAML files.'
-organization: rubyworks
-date: '2012-03-18'
+summary: Command-line access to YAML files
+description: YC provides a command line interface to teasing apart and reconstructing
+  YAML files.
+created: '2011-10-22'
+date: '2012-12-07'
