@@ -15,6 +15,10 @@ for a standardized `yaml` command line tool. While this early
 implementation is written in Ruby, ultimately the final version
 would be written in C and be widely available.
 
+IMPORTANT NOTE! YPath is not yet implemented so only simple name
+references can be used at this point.
+
+
 ## Usage
 
 Commands are invoked on the command line with:
