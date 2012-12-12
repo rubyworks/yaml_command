@@ -62,7 +62,8 @@ Outputs a colorized rendering of the YAML file.
 
 ## Requirements
 
-YAML Command uses the [ANSI](http://rubyworks.github.com/ansi) library for handling console colorization.
+* [Executable](http://rubyworks.github.com/executable) library handle CLI parsing.
+* [ANSI](http://rubyworks.github.com/ansi) library provides console colorization.
 
 
 ## Copyrights
