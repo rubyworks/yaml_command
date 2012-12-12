@@ -50,7 +50,7 @@ copyrights:
   license: BSD-2-Clause
 name: yaml_command
 title: YAML Command
-version: 0.2.0
+version: 0.1.0
 summary: Command-line access to YAML files.
 description: YAML Command provides a command line interface to teasing apart and reconstructing
   YAML files.

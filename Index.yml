@@ -1,6 +1,6 @@
 ---
 name: yaml_command
-version: 0.2.0
+version: 0.1.0
 
 title: YAML Command
 summary: Command-line access to YAML files.
