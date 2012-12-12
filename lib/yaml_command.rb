@@ -30,5 +30,20 @@ module YAMLCommand
 
   end
 
+  #
+  def self.const_missing(name)
+    index[name.to_s.downcase] || super(name)
+  end
+
+  #
+  def self.index
+    @index ||= begin
+      file = File.dirname(__FILE__) + '/yaml_command.yml'
+      YAML.load_file(file)
+    rescue
+      {}
+    end
+  end
+
 end
 
