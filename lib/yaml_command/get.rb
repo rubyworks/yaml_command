@@ -1,4 +1,4 @@
-module YAML
+module YAMLCommand
 
   class Command::GetCommand < Command
 

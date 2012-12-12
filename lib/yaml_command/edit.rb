@@ -1,4 +1,4 @@
-module YAML
+module YAMLCommand
 
   # Read a YAML file, open in default editor, validate and save.
   # If directory instead of a file, slurp together as temporary

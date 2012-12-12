@@ -1,4 +1,4 @@
-module YAML
+module YAMLCommand
 
   # Given a directory, read each file into a mapping
   # with directories into a nested mapping.

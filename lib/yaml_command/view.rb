@@ -1,9 +1,10 @@
-module YAML
+module YAMLCommand
 
-  # TODO: This could use a better implmentation, it is very simplistic
+  # TODO: View could use a better implmentation, it is very simplistic
   #       at this point.
 
-  # TODO: make a YAML stream if given multiple files ?
+  # TODO: Should view make a YAML stream if given multiple files ?
+
 
   # Display YAML file with color highlighting.
   #

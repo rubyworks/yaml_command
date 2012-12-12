@@ -1,4 +1,4 @@
-module YAML
+module YAMLCommand
 
   # Writes each entry of a YAML hash to a file.
   # This is the opposite of #slurp.

@@ -1,4 +1,4 @@
-module YAML
+module YAMLCommand
 
   # Abstract base command that all others use.
   #

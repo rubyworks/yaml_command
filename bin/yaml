@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml_command'
 begin
-  YAML::Command.run(ARGV)
+  YAMLCommand::Command.run(ARGV)
 rescue Exception => error
   raise if $DEBUG
   puts error
