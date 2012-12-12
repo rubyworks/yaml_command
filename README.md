@@ -21,8 +21,7 @@ Commands are invoked on the command line with:
 
     $ yaml <command> [options...] [arguments...]
 
-
-## Commands
+### Commands
 
 The following commands are currently supported:
 
@@ -56,8 +55,7 @@ The following commands are currently supported:
 * **view** <br/>
   Outputs a colorized rendering of the YAML file.
 
-
-## Options
+### Options
 
 Some commands has special options. Use `yaml <command> --help` to learn about those.
 All (or nearly all) commands support the following options.

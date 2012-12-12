@@ -1,0 +1,30 @@
+yaml-slurp(1) - yaml slurp command
+==================================
+
+## SYNOPSIS
+
+`yaml slurp [options] [dir]`
+
+
+## DESCRIPTION
+
+Takes a directory and converts its contents into a single YAML document.
+
+
+## OPTIONS
+
+The following options are available to the slurp command.
+
+  * `-r`/`--recurse` 
+    Recurisively include all subdirectories.
+
+  * `-y`/`--yaml` 
+    Produce output in YAML format.
+
+  * `-j`/`--json` 
+    Produce output in JSON format.
+
+
+## SEE ALSO
+
+yaml(1), yaml-get(1), yaml-set(1), yaml-sort(1), yaml-splat(1), yaml-edit(1), yaml-view(1)

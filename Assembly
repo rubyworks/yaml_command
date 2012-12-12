@@ -1,7 +1,5 @@
 ---
 email:
-  file: ~
-  subject: ~
   mailto: 
     - ruby-talk@ruby-lang.org
     - rubyworks-mailinglist@googlegroups.com
@@ -9,7 +7,7 @@ email:
 
 gem:
   active: true
-  #gemspec: pkg/lemon.gemspec
+  #gemspec: pkg/yaml_command.gemspec
 
 github:
   gh_pages: web
@@ -26,13 +24,13 @@ yard:
 
 qed:
   active: false
-  files: spec
-  
+  files: demo
+
 qedoc:
   active: false
   title: YAML Command
-  files: spec
-  output: SPEC.md
+  files: demo
+  output: DEMO.md
 
 vclog:
   output: 

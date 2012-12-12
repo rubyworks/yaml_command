@@ -1,0 +1,31 @@
+yaml-splat(1) - yaml splat command
+==================================
+
+## SYNOPSIS
+
+`yaml splat [options] [dir]`
+
+
+## DESCRIPTION
+
+Takes a YAML document and converts its contents into a set of files, one for
+each field.
+
+
+## OPTIONS
+
+The following options are available to the slurp command.
+
+  * `-r`/`--recurse` 
+    Recurisively covnert all mappings into subdirectories.
+
+  * `-y`/`--yaml` 
+    Produce output in YAML format.
+
+  * `-j`/`--json` 
+    Produce output in JSON format.
+
+
+## SEE ALSO
+
+yaml(1), yaml-get(1), yaml-set(1), yaml-sort(1), yaml-slurp(1), yaml-edit(1), yaml-view(1)

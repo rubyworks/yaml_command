@@ -1,0 +1,24 @@
+yaml-view(1) - yaml view command
+================================
+
+## SYNOPSIS
+
+`yaml view [options] [path]`
+
+
+## DESCRIPTION
+
+View a YAML file in glorious color!
+
+
+## OPTIONS
+
+The following options are available to the view command.
+
+  * `-F`/`--file` <PATH>
+    The YAML file to query, if not by stdin.
+
+
+## SEE ALSO
+
+yaml(1), yaml-set(1), yaml-sort(1), yaml-slurp(1), yaml-splurp(1), yaml-splat(1), yaml-view(1)

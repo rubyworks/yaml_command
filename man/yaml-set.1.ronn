@@ -13,8 +13,7 @@ Change values fin YAML document given a YPath and replacement value.
 
 ## OPTIONS
 
-Note that not all formats support all options, and some formats use them
-in variant manners.
+The following options are available to the set command.
 
   * `-F`/`--file` <PATH>
     The YAML file to adjust, if not by stdin.

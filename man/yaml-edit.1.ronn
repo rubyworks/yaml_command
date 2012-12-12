@@ -1,0 +1,26 @@
+yaml-edit(1) - yaml edit command
+================================
+
+## SYNOPSIS
+
+`yaml edit [options] [path]`
+
+
+## DESCRIPTION
+
+Edit a YAML file using the standard editor (via $EDITOR). If a directory
+path is given then splurp the directory, edit the result and when saved
+splat the result back to the directory.
+
+
+## OPTIONS
+
+The following options are available to the edit command.
+
+  * `-F`/`--file` <PATH>
+    The YAML file to query, if not by stdin.
+
+
+## SEE ALSO
+
+yaml(1), yaml-set(1), yaml-sort(1), yaml-slurp(1), yaml-splurp(1), yaml-splat(1), yaml-view(1)

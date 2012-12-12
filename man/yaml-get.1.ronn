@@ -13,8 +13,7 @@ Extract values from a YAML document given a YPath.
 
 ## OPTIONS
 
-Note that not all formats support all options, and some formats use them
-in variant manners.
+The following options are available to the get command.
 
   * `-F`/`--file` <PATH>
     The YAML file to query, if not by stdin.
