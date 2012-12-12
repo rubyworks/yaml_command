@@ -1,8 +1,13 @@
-module YC
+module YAML
 
   # Abstract base command that all others use.
   #
   class Command < Executable::Command
+
+    #
+    def self.command_name
+      'yaml'
+    end
 
     # Debug mode.
     def debug=(boolean)
@@ -18,8 +23,8 @@ module YC
     attr_switch :force
     alias_switch :f, :force
 
-    # YAML file to use as data source. This can be used
-    # as an alternative to `$stdin`.
+    # YAML file to use as data source. 
+    # This can be used as an alternative to `$stdin`.
     attr_accessor :file
     alias_accessor :F, :file
 
@@ -69,10 +74,16 @@ module YC
 
     alias_switch :m, :mute
 
-    # Show help message.
-    def help?
+    # Show detailed help message.
+    def help!
+      cli.show_help
+      exit
+    end
+
+    # Show minimal help message.
+    def h!
       puts cli
-      exit 0
+      exit
     end
 
     # YAML Command Language

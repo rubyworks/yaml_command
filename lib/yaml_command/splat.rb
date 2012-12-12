@@ -1,4 +1,4 @@
-module YC
+module YAML
 
   # Writes each entry of a YAML hash to a file.
   # This is the opposite of #slurp.
@@ -15,7 +15,6 @@ module YC
 
     # Splat a YAML mapping document into a directory of files.
     # One file is created for each mapping key.
-    #
     def call(dir=nil)
       raise 'not a mapping' unless Hash === data
 

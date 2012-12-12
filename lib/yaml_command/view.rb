@@ -1,4 +1,4 @@
-module YC
+module YAML
 
   # TODO: This could use a better implmentation, it is very simplistic
   #       at this point.

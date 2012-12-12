@@ -1,0 +1,51 @@
+yaml(1) - yaml command
+======================
+
+## SYNOPSIS
+
+`yaml [command] [options] [arguments]`
+
+
+## DESCRIPTION
+
+The yaml command is a command line tool for working wiuth YAML files.
+
+
+## COMMAND
+
+The following are the various subcommands currently supported by the yaml command:
+
+  * `get <YPATH>`
+    The `get` command simply extracts a portion of a YAML file and outputs
+    it to stdout.
+
+  * `set <YPATH> <VALUE>`
+    The `set` commnd is the opposite of `get` in that it lets you change
+    a portion of a YAML file. By defult the changed YAML document will go
+    to stdout, using the `-s/--save` option rewrites the file with the change.
+
+  * `sort`
+    The `sort` command can be used to sort portions of a YAML document.
+
+  * `slurp <DIR>`
+    The `slurp` command takes a directory and converts it's contents into a YAML file.
+
+  * `splat <DIR>`
+    The `splat` command take a YAML file and converts it into a file directory structure.
+    It is essentially the opposite of slurp.
+
+  * `edit`
+    The `edit` command will open a YAML file for editing in the default editor
+    (as defined by $EDITOR), and allow you to edit it.
+
+    If instead you edit a directory, then the directory will be automatically 
+    slurped into a temporary file. After editing the temporary file will be
+    splatted back out to update the directory and it's files.
+
+  * `view`
+    The `view` command prints a colorized rendering of the YAML file.
+
+
+## SEE ALSO
+
+yaml-get(1), yaml-set(1), yaml-sort(1), yaml-slurp(1), yaml-splat(1), yaml-edit(1), yaml-view(1)

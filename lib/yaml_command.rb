@@ -1,15 +1,16 @@
-module YC
-  require 'yaml'
-  require 'fileutils'
-  require 'executable'
-  require 'yc/base'
-  require 'yc/get'
-  require 'yc/set'
-  require 'yc/sort'
-  require 'yc/splat'
-  require 'yc/slurp'
-  require 'yc/edit'
-  require 'yc/view'
+require 'yaml'
+require 'fileutils'
+require 'executable'
+require 'yaml_command/base'
+require 'yaml_command/get'
+require 'yaml_command/set'
+require 'yaml_command/sort'
+require 'yaml_command/splat'
+require 'yaml_command/slurp'
+require 'yaml_command/edit'
+require 'yaml_command/view'
+
+module YAML
 
   #
   module Console
@@ -17,20 +18,19 @@ module YC
 
     #
     def slurp(dir, options={})
-      slurp = Command::SlurpCommand.new(options)
+      slurp = SlurpCommand.new(options)
       slurp.call(dir)
     end
 
     #
     def splat(file, options={})
-      splat = Command::SplatCommand.new(options)
+      splat = SplatCommand.new(options)
       splat.call(file)
     end
 
   end
+
 end
-
-
 
 =begin
   def main_options(options)

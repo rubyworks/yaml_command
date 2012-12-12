@@ -1,4 +1,4 @@
-module YC
+module YAML
 
   class Command::SetCommand < Command
 

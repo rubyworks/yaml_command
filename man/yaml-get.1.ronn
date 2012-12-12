@@ -1,0 +1,31 @@
+yaml-get(1) - yaml get command
+==============================
+
+## SYNOPSIS
+
+`yaml get [options] [ypath]`
+
+
+## DESCRIPTION
+
+Extract values from a YAML document given a YPath.
+
+
+## OPTIONS
+
+Note that not all formats support all options, and some formats use them
+in variant manners.
+
+  * `-F`/`--file` <PATH>
+    The YAML file to query, if not by stdin.
+
+  * `-y`/`--yaml` 
+    Produce output in YAML format.
+
+  * `-j`/`--json` 
+    Produce output in JSON format.
+
+
+## SEE ALSO
+
+yaml(1), yaml-set(1), yaml-sort(1), yaml-slurp(1), yaml-splat(1), yaml-edit(1), yaml-view(1)

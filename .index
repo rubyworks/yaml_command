@@ -2,7 +2,7 @@
 type: ruby
 revision: 2013
 sources:
-- Indexfile
+- Index.yml
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -10,7 +10,6 @@ organizations:
 - name: Rubyworks
 requirements:
 - name: ansi
-- name: executable
 - groups:
   - build
   development: true
@@ -23,13 +22,13 @@ conflicts: []
 alternatives: []
 resources:
 - type: home
-  uri: http://rubyworks.github.com/yc
+  uri: http://rubyworks.github.com/yaml_command
   label: Homepage
 - type: code
-  uri: http://github.com/rubyworks/yc
+  uri: http://github.com/rubyworks/yaml_command
   label: Source Code
 - type: bugs
-  uri: http://github.com/rubyworks/yc/issues
+  uri: http://github.com/rubyworks/yaml_command/issues
   label: Issue Tracker
 - type: mail
   uri: http://groups.google.com/rubyworks-mailinglist
@@ -40,7 +39,7 @@ resources:
 repositories:
 - name: upstream
   scm: git
-  uri: git://github.com/rubyworks/y.git
+  uri: git://github.com/rubyworks/yaml_command.git
 categories: []
 load_path:
 - lib
@@ -48,11 +47,11 @@ copyrights:
 - holder: RubyWorks
   year: '2011'
   license: BSD-2-Clause
-name: yc
+name: yaml_command
 title: YAML Command
-version: 0.0.1
-summary: Command-line access to YAML files
-description: YC provides a command line interface to teasing apart and reconstructing
+version: 0.0.2
+summary: Command-line access to YAML files.
+description: YAML Command provides a command line interface to teasing apart and reconstructing
   YAML files.
 created: '2011-10-22'
-date: '2012-12-07'
+date: '2012-12-12'

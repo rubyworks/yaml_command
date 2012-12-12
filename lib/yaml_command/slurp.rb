@@ -1,11 +1,11 @@
-module YC
+module YAML
 
   # Given a directory, read each file into a mapping
   # with directories into a nested mapping.
   #
   class Command::SlurpCommand < Command
 
-    #
+    # Import each file of a directory into a YAML file.
     def slurp(dir)
       hash = {}
       Dir.entries(dir).each do |path|

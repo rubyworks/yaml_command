@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
-
-require 'yc'
-
+require 'yaml_command'
 begin
-  YC::Command.run(ARGV)
+  YAML::Command.run(ARGV)
 rescue Exception => error
   raise if $DEBUG
   puts error

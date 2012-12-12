@@ -1,24 +1,23 @@
 ---
-name: yc
-version: 0.0.1
+name: yaml_command
+version: 0.0.2
 
 title: YAML Command
-summary: Command-line access to YAML files
+summary: Command-line access to YAML files.
 
 description:
-  YC provides a command line interface to teasing apart and
+  YAML Command provides a command line interface to teasing apart and
   reconstructing YAML files.
 
 requirements:
   - ansi
-  - executable
   - detroit (build)
   - qed     (test)
 
 resources:
-  home: http://rubyworks.github.com/yc
-  code: http://github.com/rubyworks/yc
-  bugs: http://github.com/rubyworks/yc/issues
+  home: http://rubyworks.github.com/yaml_command
+  code: http://github.com/rubyworks/yaml_command
+  bugs: http://github.com/rubyworks/yaml_command/issues
   mail: http://groups.google.com/rubyworks-mailinglist
   chat: irc://chat.us.freenode.net/rubyworks
 
@@ -26,7 +25,7 @@ authors:
   - Thomas Sawyer <transfire@gmail.com>
 
 repositories:
-  upstream: git://github.com/rubyworks/y.git
+  upstream: git://github.com/rubyworks/yaml_command.git
 
 organization: Rubyworks
 
@@ -34,3 +33,4 @@ created: '2011-10-22'
 
 copyrights:
   - (c) 2011 RubyWorks (BSD-2-Clause)
+

@@ -1,4 +1,4 @@
-module YC
+module YAML
 
   # Sort command. 
   #

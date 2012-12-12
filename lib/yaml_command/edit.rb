@@ -1,4 +1,4 @@
-module YC
+module YAML
 
   # Read a YAML file, open in default editor, validate and save.
   # If directory instead of a file, slurp together as temporary
@@ -10,7 +10,7 @@ module YC
 
     EDITOR = ENV['EDITOR'] || 'vi'
 
-    #
+    # Edit a YAML file, or edit a directory via slurp and splt.
     def call(file_or_dir)
       if File.directory?(file_or_dir)
         data0 = Console.slurp(file_or_dir)
