@@ -15,49 +15,70 @@ for a standardized `yaml` command line tool. While this early
 implementation is written in Ruby, ultimately the final version
 would be written in C and be widely available.
 
+## Usage
 
-## Commands
-
-Commands are invoked simply enough:
+Commands are invoked on the command line with:
 
     $ yaml <command> [options...] [arguments...]
 
-### get
 
-The `get` command simply extracts a portion of a YAML file and outputs
-it to stdout.
+## Commands
 
-### set
+The following commands are currently supported:
 
-The `set` commnd is the opposite of `get` in that it lets you change
-a portion of a YAML file. By defult the changed YAML document will go
-to stdout, using the `-s/--save` option rewrites the file with the change.
+* `get`
+  The `get` command simply extracts a portion of a YAML file and outputs
+  it to stdout.
 
-### sort
+* `set`
+  The `set` commnd is the opposite of `get` in that it lets you change
+  a portion of a YAML file. By defult the changed YAML document will go
+  to stdout, using the `-s/--save` option rewrites the file with the change.
 
-The `sort` command can be used to sort portions of a YAML document.
+* `sort`
+  The `sort` command can be used to sort portions of a YAML document.
 
-### slurp
+* `slurp`
+  The `slurp` command takes a directory and converts it's contents into a YAML file.
 
-The `slurp` command takes a directory and converts it's contents into a YAML file.
+* `splat`
+  The `splat` command take a YAML file and converts it into a file directory structure.
+  It is essentially the opposite of slurp.
 
-### splat
+* `edit`
+  Edit will open a YAML file for editing in the default editor (as defined by 
+  $EDITOR), and allow you to edit it.
 
-The `splat` command take a YAML file and converts it into a file directory structure.
-It is essentially the opposite of slurp.
+  If instead you edit a directory, then the directory will be automatically 
+  slurped into a temporary file. After editing the temporary file will be
+  splatted back out to update the directory and it's files.
 
-### edit
+* `view`
+  Outputs a colorized rendering of the YAML file.
 
-Edit will open a YAML file for editing in the default editor (as defined by 
-$EDITOR), and allow you to edit it.
 
-If instead you edit a directory, then the directory will be automatically 
-slurped into a temporary file. After editing the temporary file will be
-splatted back out to update the directory and it's files.
+## Options
 
-### view
+Some commands has special options. Use `yaml <command> --help` to learn about those.
+All (or nearly all) commands support the following options.
 
-Outputs a colorized rendering of the YAML file.
+* `-F`/`--file [PATH]`
+  Use the given YAML file instead of using stdin.
+
+* `-y`/`--yaml`
+  Output results in YAML format.
+
+* `-j`/`--json`
+  Output results in JSON format.
+
+* `-m`/`--mute`
+  Surpress all output.
+
+* `-f`/`--force`
+  Used to force overwrites when necessary.
+
+* `--debug`
+  Turn on debug mode to get detailed error report if there is a problem.
 
 
 ## Requirements
