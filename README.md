@@ -26,26 +26,26 @@ Commands are invoked on the command line with:
 
 The following commands are currently supported:
 
-* `get` <br/>
+* *get* <br/>
   The `get` command simply extracts a portion of a YAML file and outputs
   it to stdout.
 
-* `set` <br/>
+* *set* <br/>
   The `set` commnd is the opposite of `get` in that it lets you change
   a portion of a YAML file. By defult the changed YAML document will go
   to stdout, using the `-s/--save` option rewrites the file with the change.
 
-* `sort` <br/>
+* *sort* <br/>
   The `sort` command can be used to sort portions of a YAML document.
 
-* `slurp` <br/>
+* *slurp* <br/>
   The `slurp` command takes a directory and converts it's contents into a YAML file.
 
-* `splat` <br/>
+* *splat* <br/>
   The `splat` command take a YAML file and converts it into a file directory structure.
   It is essentially the opposite of slurp.
 
-* `edit` <br/>
+* *edit* <br/>
   Edit will open a YAML file for editing in the default editor (as defined by 
   $EDITOR), and allow you to edit it.
 
@@ -53,7 +53,7 @@ The following commands are currently supported:
   slurped into a temporary file. After editing the temporary file will be
   splatted back out to update the directory and it's files.
 
-* `view` <br/>
+* *view* <br/>
   Outputs a colorized rendering of the YAML file.
 
 
@@ -62,22 +62,22 @@ The following commands are currently supported:
 Some commands has special options. Use `yaml <command> --help` to learn about those.
 All (or nearly all) commands support the following options.
 
-* `-F`/`--file [PATH]` <br/>
+* *-F*/*--file [PATH]* <br/>
   Use the given YAML file instead of using stdin.
 
-* `-y`/`--yaml` <br/>
+* *-y*/*--yaml* <br/>
   Output results in YAML format.
 
-* `-j`/`--json` <br/>
+* *-j*/*--json* <br/>
   Output results in JSON format.
 
-* `-m`/`--mute` <br/>
+* *-m*/*--mute* <br/>
   Surpress all output.
 
-* `-f`/`--force` <br/>
+* *-f*/*--force* <br/>
   Used to force overwrites when necessary.
 
-* `--debug` <br/>
+* *--debug* <br/>
   Turn on debug mode to get detailed error report if there is a problem.
 
 
