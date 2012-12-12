@@ -1,6 +1,6 @@
 ---
 name: yaml_command
-version: 0.0.2
+version: 0.2.0
 
 title: YAML Command
 summary: Command-line access to YAML files.
@@ -11,6 +11,7 @@ description:
 
 requirements:
   - ansi
+  - executable
   - detroit (build)
   - qed     (test)
 
