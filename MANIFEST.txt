@@ -10,6 +10,7 @@ lib/yaml_command/sort.rb
 lib/yaml_command/splat.rb
 lib/yaml_command/view.rb
 lib/yaml_command.rb
+lib/yaml_command.yml
 man/yaml-edit.1
 man/yaml-edit.1.html
 man/yaml-edit.1.ronn
