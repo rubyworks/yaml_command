@@ -1,4 +1,4 @@
-#!mast .index .yardopts bin data demo lib man share spec test [A-Z]*.*
+#!mast -x man/.gitignore .index .yardopts bin data demo lib man share spec test *.md *.txt
 .index
 bin/yaml
 lib/yaml_command/base.rb
@@ -10,13 +10,27 @@ lib/yaml_command/sort.rb
 lib/yaml_command/splat.rb
 lib/yaml_command/view.rb
 lib/yaml_command.rb
+man/yaml-edit.1
+man/yaml-edit.1.html
+man/yaml-edit.1.ronn
 man/yaml-get.1
 man/yaml-get.1.html
 man/yaml-get.1.ronn
+man/yaml-set.1
+man/yaml-set.1.html
+man/yaml-set.1.ronn
+man/yaml-slurp.1
+man/yaml-slurp.1.html
+man/yaml-slurp.1.ronn
+man/yaml-splat.1
+man/yaml-splat.1.html
+man/yaml-splat.1.ronn
+man/yaml-view.1
+man/yaml-view.1.html
+man/yaml-view.1.ronn
 man/yaml.1
 man/yaml.1.html
 man/yaml.1.ronn
-LICENSE.txt
-Index.yml
 HISTORY.md
 README.md
+LICENSE.txt
