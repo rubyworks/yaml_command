@@ -1,15 +1,22 @@
-#!mast .ruby .yardopts bin lib spec test [A-Z]*.*
-.ruby
-bin/yc
-lib/yc/base.rb
-lib/yc/edit.rb
-lib/yc/get.rb
-lib/yc/set.rb
-lib/yc/slurp.rb
-lib/yc/sort.rb
-lib/yc/splat.rb
-lib/yc/view.rb
-lib/yc.rb
+#!mast .index .yardopts bin data demo lib man share spec test [A-Z]*.*
+.index
+bin/yaml
+lib/yaml_command/base.rb
+lib/yaml_command/edit.rb
+lib/yaml_command/get.rb
+lib/yaml_command/set.rb
+lib/yaml_command/slurp.rb
+lib/yaml_command/sort.rb
+lib/yaml_command/splat.rb
+lib/yaml_command/view.rb
+lib/yaml_command.rb
+man/yaml-get.1
+man/yaml-get.1.html
+man/yaml-get.1.ronn
+man/yaml.1
+man/yaml.1.html
+man/yaml.1.ronn
 LICENSE.txt
+Index.yml
 HISTORY.md
 README.md
