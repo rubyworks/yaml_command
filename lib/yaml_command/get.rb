@@ -20,7 +20,7 @@ module YAML
         when Time
           value.strftime('%Y-%m-%d %H:%M:%S')
         else
-          value.to_yaml
+          value
         end
       )
     end
