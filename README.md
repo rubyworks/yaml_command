@@ -83,10 +83,31 @@ All (or nearly all) commands support the following options.
   Turn on debug mode to get detailed error report if there is a problem.
 
 
-## Requirements
+## Installation
+
+### Ruby
+
+The `yaml` command is a Ruby script, so you will need a Ruby interpretor installed on your system.
+There are a few of these now, such as Rubinus, JRuby and the original MRI. The later is the typical
+choice, and usually can be installed via your operating system'ss package manager. For example, on
+dpkg systems like Ubunutu, you can type in a shell console:
+
+    $ apt-get install ruby
+
+### Using RubyGems
+
+With Ruby installed, the easist way to install Ruby libraries is using RubyGems. To install just type:
+
+    $ gem install yaml_command
+
+### Requirements
+
+YAML Command requires the following other packages be installed:
 
 * [Executable](http://rubyworks.github.com/executable) library handle CLI parsing.
 * [ANSI](http://rubyworks.github.com/ansi) library provides console colorization.
+
+If you use RubyGems these will be install automtically.
 
 
 ## Copyrights
