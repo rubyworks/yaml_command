@@ -34,8 +34,8 @@ The following commands are currently supported:
   it to stdout.
 
 * **set** <br/>
-  The `set` commnd is the opposite of `get` in that it lets you change
-  a portion of a YAML file. By defult the changed YAML document will go
+  The `set` command is the opposite of `get` in that it lets you change
+  a portion of a YAML file. By default the changed YAML document will go
   to stdout, using the `-s/--save` option rewrites the file with the change.
 
 * **sort** <br/>
@@ -74,7 +74,7 @@ All (or nearly all) commands support the following options.
   Output results in JSON format.
 
 * **-m** / **--mute** <br/>
-  Surpress all output.
+  Suppress all output.
 
 * **-f** / **--force** <br/>
   Used to force overwrites when necessary.
@@ -85,18 +85,19 @@ All (or nearly all) commands support the following options.
 
 ## Installation
 
-### Ruby
+### Ruby Interpreter
 
-The `yaml` command is a Ruby script, so you will need a Ruby interpretor installed on your system.
-There are a few of these now, such as Rubinus, JRuby and the original MRI. The later is the typical
-choice, and usually can be installed via your operating system'ss package manager. For example, on
-dpkg systems like Ubunutu, you can type in a shell console:
+The `yaml` command is a Ruby script, so you will need a Ruby interpreter installed on your system.
+There are a few of these now, such as Rubinius, JRuby and the original MRI. The later is the typical
+choice, and usually can be installed via your operating system's package manager. For example, on
+dpkg-based systems like Ubuntu, you can type in a shell console:
 
     $ apt-get install ruby
 
 ### Using RubyGems
 
-With Ruby installed, the easist way to install Ruby libraries is using RubyGems. To install just type:
+With Ruby installed, the easiest way to install a Ruby library is via RubyGems. To install YAML Command
+just type:
 
     $ gem install yaml_command
 
@@ -107,13 +108,13 @@ YAML Command requires the following other packages be installed:
 * [Executable](http://rubyworks.github.com/executable) library handle CLI parsing.
 * [ANSI](http://rubyworks.github.com/ansi) library provides console colorization.
 
-If you use RubyGems these will be install automtically.
+If you are using RubyGems these will be install automatically.
 
 
 ## Copyrights
 
 Copyright (c) 2011 Rubyworks. All rights reserved.
 
-YAML Comamnd may be distributed in accordance with the **BSD-2-Clause** license.
+YAML Command may be distributed in accordance with the **BSD-2-Clause** license.
 
 See the LICENSE.txt file for details.
