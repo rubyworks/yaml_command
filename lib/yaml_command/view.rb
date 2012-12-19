@@ -1,7 +1,9 @@
 module YAMLCommand
 
-  # TODO: View could use a better implmentation, it is very simplistic
+  # TODO: View could use a better implementation, it is very simplistic
   #       at this point.
+
+  # TODO: Color coordinate matching achors and references.
 
   # TODO: Should view make a YAML stream if given multiple files ?
 
@@ -29,6 +31,9 @@ module YAMLCommand
           text = $stdin.read
         end
       end
+
+      # Make sure it is valid YAML.
+      YAML.load(text)
 
       text.each_line do |line|
         case line

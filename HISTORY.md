@@ -1,5 +1,12 @@
 # RELEASE HISTORY
 
+## 0.1.1 /
+
+Changes:
+
+* Make sure it is valid YAML. (Alexey Zakhlestin)
+
+
 ## 0.1.0 / 2012-12-12
 
 The project has been renamed `yaml-command` instead of the
