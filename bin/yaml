@@ -2,7 +2,7 @@
 require 'yaml_command'
 begin
   YAMLCommand::Command.run(ARGV)
-rescue Exception => error
+rescue StandardError => error
   raise if $DEBUG
   puts error
 end
