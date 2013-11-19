@@ -45,7 +45,7 @@ The following commands are currently supported:
   The `slurp` command takes a directory and converts it's contents into a YAML file.
 
 * **splat** <br/>
-  The `splat` command take a YAML file and converts it into a file directory structure.
+  The `splat` command takes a YAML file and converts it into a file directory structure.
   It is essentially the opposite of slurp.
 
 * **edit** <br/>
@@ -88,7 +88,7 @@ All (or nearly all) commands support the following options.
 ### Ruby Interpreter
 
 The `yaml` command is a Ruby script, so you will need a Ruby interpreter installed on your system.
-There are a few of these now, such as Rubinius, JRuby and the original MRI. The later is the typical
+There are a few of these now, such as Rubinius, JRuby and the original MRI. The latter is the typical
 choice, and usually can be installed via your operating system's package manager. For example, on
 dpkg-based systems like Ubuntu, you can type in a shell console:
 
