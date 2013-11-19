@@ -86,7 +86,7 @@ module YAMLCommand
       exit
     end
 
-    # YAML Command Language
+    # YAML Command
     def call
       if file
         output(data)
@@ -95,7 +95,7 @@ module YAMLCommand
       end
     end
 
-  #protected
+  protected
 
     #
     def data=(data)
