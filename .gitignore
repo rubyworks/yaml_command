@@ -1,4 +1,5 @@
 .fire/digest
-log
-web
+log/
+web/
 work/sandbox
+*.lock
