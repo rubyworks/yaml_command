@@ -1,6 +1,6 @@
 ---
 name: yaml_command
-version: 0.1.0
+version: 0.1.1
 
 title: YAML Command
 summary: Command-line access to YAML files.
@@ -12,8 +12,8 @@ description:
 requirements:
   - ansi
   - executable
-  - detroit (build)
   - qed     (test)
+  #- detroit (build)
 
 resources:
   home: http://rubyworks.github.com/yaml_command

@@ -1,6 +1,6 @@
 ---
-type: ruby
 revision: 2013
+type: ruby
 sources:
 - Index.yml
 authors:
@@ -11,10 +11,6 @@ organizations:
 requirements:
 - name: ansi
 - name: executable
-- groups:
-  - build
-  development: true
-  name: detroit
 - groups:
   - test
   development: true
@@ -42,17 +38,19 @@ repositories:
   scm: git
   uri: git://github.com/rubyworks/yaml_command.git
 categories: []
-load_path:
-- lib
 copyrights:
 - holder: RubyWorks
   year: '2011'
   license: BSD-2-Clause
+customs: []
+paths:
+  lib:
+  - lib
 name: yaml_command
 title: YAML Command
-version: 0.1.0
+version: 0.1.1
 summary: Command-line access to YAML files.
 description: YAML Command provides a command line interface to teasing apart and reconstructing
   YAML files.
 created: '2011-10-22'
-date: '2012-12-12'
+date: '2014-08-23'

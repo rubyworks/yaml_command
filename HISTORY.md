@@ -1,10 +1,14 @@
 # RELEASE HISTORY
 
-## 0.1.1 /
+## 0.1.1 / 2014-08-23
+
+This release simply contains an accumilation of small changes made over 
+the last two years addressing issues raised.
 
 Changes:
 
-* Make sure it is valid YAML. (Alexey Zakhlestin)
+* Make sure input is valid YAML. (Alexey Zakhlestin)
+* Set now supports any YAML key and value.
 
 
 ## 0.1.0 / 2012-12-12
