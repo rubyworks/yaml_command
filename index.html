@@ -1,1 +1,72 @@
-My GitHub Page
+<h1>YC - YAML COMMAND</h1>
+
+<p><a href="http://rubyworks.github.com/yc">Website</a> /
+<a href="http://github.com/rubyworks/yc/issues">Report Issue</a> /
+<a href="http://github.com/rubyworks/yc">Development</a> /
+<a href="irc://chat.us.freenode.net/rubyworks">IRC Channel</a></p>
+
+<h2>Description</h2>
+
+<p>YC is a command line tool for working with YAML.</p>
+
+<p>Currently it is very much a work in progress, so please expect potential
+issues and interface changes! In paricular, YC won't be a useful as it
+should be until a solid YPath library is available.</p>
+
+<h2>Commands</h2>
+
+<p>Commands are invoked simply enough:</p>
+
+<pre><code>$ yc &lt;command&gt; [options...] [arguments...]
+</code></pre>
+
+<h3>get</h3>
+
+<p>The <code>get</code> command simply extracts a portion of a YAML file and outputs
+it to stdout.</p>
+
+<h3>set</h3>
+
+<p>The <code>set</code> commnd is the opposite of <code>get</code> in that it lets you change
+a portion of a YAML file. By defult the changes YAML document will go
+to stdout, using the <code>--save</code> option rewrites the file with the change.</p>
+
+<h3>sort</h3>
+
+<p>The sort command can be used to sort portions of a YAML document.</p>
+
+<h3>slurp</h3>
+
+<p>Slurp takes a directory and converts it's contents into a YAML file.</p>
+
+<h3>splat</h3>
+
+<p>Splat take a YAML file and converts it into a file directory structure.
+It is essentially the opposite of slurp.</p>
+
+<h3>edit</h3>
+
+<p>Edit will open a YAML file for editing in the default editor (as defined by
+$EDITOR), and allow you to edit it.</p>
+
+<p>If instead you edit a directory, the the directory will be automatically
+slurped into a temporary file. After editing the temporary file will be
+splatted back out to update the directory and it's files.</p>
+
+<h3>view</h3>
+
+<p>Outputs a colized rendering of the YAML file.</p>
+
+<h2>Requirements</h2>
+
+<p>YC uses the <a href="http://rubyworks.github.com/executable">Executable</a> library for
+command line parsing and the <a href="http://rubyworks.github.com/ansi">ANSI</a>
+library for handling console colorization.</p>
+
+<h2>Copyrights</h2>
+
+<p>Copyright (c) 2011 Rubyworks. All rights reserved.</p>
+
+<p>YC may be distributed in accordance with the <strong>BSD-2-Clause</strong> license.</p>
+
+<p>See the LICENSE.txt file for details.</p>
